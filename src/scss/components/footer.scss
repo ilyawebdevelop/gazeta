@@ -1,0 +1,46 @@
+// Footer
+.footer {
+  background-color: #0039A6;
+  padding-top: 43px;
+  padding-bottom: 43px;
+  color: #fff;
+  font-size: 14px;
+  line-height: normal;
+  .container {
+    max-width: 1385px;
+  }
+  &Logo {
+    margin-right: 7px;
+    img {
+      width: 235px;
+    }
+  }
+  .socials {
+    ul {
+      column-gap: 12px;
+
+      li {
+        a {
+          width: 24px;
+
+          svg {
+            width: 24px;
+            height: 25px;
+            fill: #fff;
+          }
+        }
+      }
+    }
+  }
+  .contacts {   
+    font-weight: 400;
+    padding-left: 50px;
+
+    strong {
+      font-weight: 600;
+    }
+    a {
+      display: inline-block;
+    }
+  }
+}

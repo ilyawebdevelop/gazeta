@@ -1,0 +1,185 @@
+// Header
+.header {
+  padding-top: 45px;
+  padding-bottom: 20px;
+
+  &Logo {
+    img {
+      max-width: 407px;
+    }
+  }
+
+  &T {
+    &L {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-top: 11px;
+    }
+
+    &R {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+      flex: 1 0 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      padding-top: 4px;
+    }
+
+    &Container {
+      // max-width: 1360px;
+      display: flex;
+    }
+  }
+
+  &B {
+    margin-top: 32px;
+  }
+
+  &Nav {
+    padding-bottom: 13px;
+    border-bottom: 1px solid #1F1F1F;
+
+    &T {
+      margin-bottom: 19px;
+    }
+
+    &List {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 18px;
+      justify-content: center;
+
+      li {
+        a {
+          font-weight: 700;
+          font-size: 16px;
+          transition: color .2s linear;
+          &:hover {
+            color: #0039A6;
+          }
+        }
+      }
+    }
+  }
+
+  .searchW {
+    .searchInput {
+      height: 36px;
+      padding-left: 12px;
+      padding-right: 32px;
+      border-radius: 4px;
+      background: rgba(183, 183, 183, 0.35) url('@img/icons/search-purple.svg') no-repeat right 12px center;
+      width: 305px;
+      color: #5D5FEF;
+
+      &::placeholder {
+        color: #5D5FEF;
+      }
+    }
+  }
+
+  .socials {
+    ul {
+      column-gap: 13px;
+
+      li {
+        a {
+          width: 24px;
+
+          svg {
+            width: 24px;
+            height: 25px;
+            fill: #1F1F1F;
+          }
+        }
+      }
+    }
+  }
+
+  &Info {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+
+    &Date {
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      margin-right: 30px;
+
+      .sep {
+        width: 2px;
+        height: 12px;
+        background-color: #1F1F1F;
+      }
+    }
+
+    &Weather {
+      display: flex;
+      column-gap: 12px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      align-items: center;
+
+      &Select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding-right: 15px;
+        background: url('@img/icons/arrow-down.svg') no-repeat right 2px top 4px / 10px;
+        cursor: pointer;
+      }
+
+      &Icon {
+        svg {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    &Age {
+      margin-left: 7px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 22px;
+      color: #FFC700;
+    }
+  }
+  &--blue {
+    .headerInfo {
+      color: #0039A6;
+    }
+    .headerInfoAge {
+      color: #D7A700;
+    }
+    .headerInfoWeatherIcon svg {
+      fill: #0039A6;
+    }
+    .socials ul li a svg {
+      fill: #0039A6;
+    }
+    .headerInfoWeatherSelect {
+      background: url('@img/icons/arrow-down-blue.svg') no-repeat right 2px top 4px/10px;
+    }
+    .searchW .searchInput {
+      color: #fff;
+      background: #0039A6 url('@img/icons/search-white.svg') no-repeat right 12px center;
+      &::placeholder {
+        color: #fff;
+      }
+    }
+  }
+}

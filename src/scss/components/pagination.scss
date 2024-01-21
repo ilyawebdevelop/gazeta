@@ -1,0 +1,37 @@
+.pagination {
+  margin-top: 30px;
+  margin-bottom: 33px;
+  ul {
+    li {
+    
+   
+      a {
+        font-weight: 700;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        background-color: #0039A6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFC700;
+      }
+
+      &.first-link, &.last-link {
+        a {
+          font-size: 15px;
+          line-height: 15px;
+          font-weight: 400;
+         text-decoration: underline;  
+        }     
+      }
+      &.prev-more, &.next-more {
+        a {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 15px;
+        }       
+      }
+    }
+  }
+}

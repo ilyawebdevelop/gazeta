@@ -1,0 +1,115 @@
+.intro {
+  &Baner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    margin-bottom: 42px;
+    &List {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 35px;
+      row-gap: 14px;
+    }
+    &Item {
+      grid-column: 4 span;
+    }
+    &Sm {
+      padding-top: 145px;
+      padding-bottom: 12px;
+      padding-right: 15px;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 0;
+      height: 100%;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.10) 0%, #000 100%);
+        border-radius: 10px;
+      }
+      &Link {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+      .introBanerHead {
+        .sep {
+          height: 16px;
+        }
+      }
+      .introBanerViews {
+        margin-top: 0;
+      }
+    }
+
+    &Head {
+      font-size: 11px;
+      line-height: 18px;
+      font-family: $font-family-inter;
+      position: relative;
+      height: fit-content;
+      .sep {
+        height: 18px;
+        width: 1px;
+      }
+    }
+
+    &Title {
+      color: #fff;
+      max-width: 476px;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      font-size: 42px;
+      line-height: 48px;
+      letter-spacing: .84px;
+      font-weight: 800;
+
+      &Sm {
+        font-size: 16px;
+        letter-spacing: .32px;
+        line-height: normal;
+        max-width: 258px;
+        position: relative;
+      }
+    }
+
+    &Descr {
+      font-weight: 700;
+      margin-bottom: 13px;
+      color: #5D5FEF;
+      font-family: $font-family;
+      max-width: 455px;
+    }
+
+    &Link {
+      font-size: 13px;
+      line-height: 18px;
+      font-weight: 700;
+      background: url('@img/icons/text-more.svg') no-repeat right center / 18px;
+      color: #FFC700;
+      padding-right: 23px;
+      width: fit-content;
+    }
+
+    &Views {
+      padding-left: 25px;
+      background: url('@img/icons/views.svg') no-repeat left center / 22px;
+      margin-top: 9px;
+      position: relative;
+      font-size: 11px;
+      line-height: 18px;
+    }
+  }
+}

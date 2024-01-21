@@ -1,0 +1,91 @@
+.calendar {
+  &Item {
+    .air-datepicker {
+      border-radius: 12px;
+      border: 1px solid #0039A6;
+      border-right: none;
+      width: 100%;
+      font-family: $font-family;
+
+      &-nav {
+        background: #FFC700;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        column-gap: 8px;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right: 1px solid #0039A6;
+        border-bottom: none;
+
+        &--title {
+          color: #0039A6;
+          font-family: 'Montserrat';
+          font-size: 18px;
+          font-weight: 800;
+          letter-spacing: 0.54px;
+          padding-left: 0;
+          padding-right: 0;
+
+          &:hover {
+            background-color: transparent;
+          }
+
+          i {
+            color: #0039A6;
+          }
+        }
+
+        &--action {
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+
+      &-body {
+        &--day {
+          &-name {
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            border-right: 1px solid #0039A6;
+            height: 32px;
+            border-top: 1px solid #0039A6;
+          }
+          &-names {
+            margin-bottom: 0;
+            margin-top: 0;
+
+          }
+        }
+
+        &--cells {
+          &.-days- {
+            grid-auto-rows: 41px;
+          }
+        }
+      }
+
+      &-cell {
+        border-radius: 0;
+        border-right: 1px solid #0039A6;
+        border-top: 1px solid #0039A6;
+        font-weight: 700;
+        font-size: 20px;
+        color: #000;
+
+        &:last-child {
+          border-bottom-right-radius: 12px;
+        }
+        &.-selected- {
+          background-color: #FFC700;
+        }
+      }
+
+      &--content {
+        padding: 0;
+      }
+    }
+  }
+}
