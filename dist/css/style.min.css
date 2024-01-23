@@ -17228,6 +17228,7 @@ h2 {
   border-bottom: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: 0;
   width: calc(100% - 80px);
+  font-size: 16px;
 }
 .headerSearchMobile .searchW .searchInput::placeholder {
   color: rgba(255, 255, 255, 0.8);
@@ -17439,6 +17440,7 @@ h2 {
   line-height: 30px;
   font-weight: 600;
   letter-spacing: 0.4px;
+  border-radius: 0;
 }
 @media (max-width: 991px) {
   .search .searchInputSect {
