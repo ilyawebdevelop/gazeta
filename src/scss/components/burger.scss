@@ -3,8 +3,8 @@
   align-self: center;
   flex-direction: column;
   justify-content: space-between;
-  width: 18px;
-  height: 14px;
+  width: 21px;
+  height: 16px;
   min-width: 15px;
   margin-right: 0;
   cursor: pointer;
@@ -21,8 +21,8 @@
   align-self: flex-start;
   height: 2px;
   width: 100%;
-  background: #222;
-  border-radius: 10px;
+  background: #fff;
+  border-radius: 2px 0 0 2px;
 }
 
 .hamburger .meat {
@@ -32,6 +32,6 @@
 .top-bun.active,
 .meat.active,
 .bottom-bun.active {
-  opacity: 0;
+  // opacity: 0;
 }
 

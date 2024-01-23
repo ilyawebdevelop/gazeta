@@ -86,6 +86,24 @@
   </div>
   <div class="headerB">
     <div class="container">
+      <div class="headerBMobLeft">
+        <div class="hamburger" id="toggle">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </div><!-- /Hamburger Menu -->
+        <a href="/" class="headerMobLogo logo">
+          <img src="img/admin/header/logo-white.svg" alt="logo">
+        </a>
+      </div>
+      <div class="headerBMobRight">
+        <button class="headerSearchButton">
+          <img src="img/icons/search.svg" alt="icon">
+        </button>
+        <div class="headerAge">
+          18+
+        </div>
+      </div>
       <div class="headerNav headerNavT">
         <ul class="headerNavList">
           <li><a href="#">НОВОСТИ </a></li>
@@ -110,6 +128,49 @@
       </div>
     </div>
   </div>
+  <nav class="headerNavMobile">
+    <ul class="headerNavList">
+      <li><a href="#">НОВОСТИ </a></li>
+      <li><a href="#">ПОЛИТИКА </a></li>
+      <li><a href="#">ЧП </a></li>
+      <li><a href="#">ЭКОНОМИКА </a></li>
+      <li><a href="#">ОБЩЕСТВО </a></li>
+      <li><a href="#">СПОРТ </a></li>
+      <li><a href="#">КУЛЬТУРА </a></li>
+      <li><a href="#">СПЕЦПРОЕКТЫ </a></li>
+      <li><a href="#">НА ЗЛОБУ ДНЯ </a></li>
+      <li><a href="#">ФОТОРЕПОРТАЖИ </a></li>
+      <li><a href="#">КОНТАКТЫ </a></li>
+      <li><a href="#">RSS </a></li>
+      <li><a href="#">LIVE ЧАТ </a></li>
+      <li><a href="#">ПОДКАСТЫ </a></li>
+    </ul>
+    <div class="headerSocials socials d-block d-lg-none">
+      <ul class="socialsList">
+        <li class="socialsItem">
+          <a href="#" target="_blank">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socialsItem">
+          <a href="#" target="_blank">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socialsItem">
+          <a href="#" target="_blank">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#telegram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div><!-- /socials -->
+  </nav>
 </header>
 		<main class="main">
 			<section class="sect news">
@@ -119,7 +180,7 @@
     </h1>
     <div class="row">
       <div class="col-lg-3">
-        <div class="sidebar">
+        <div class="sidebar d-none d-lg-block">
   <div class="sidebarBlock">
     <div class="sidebarBlockHead">
       <h3 class="sidebarBlockHeadText">
@@ -161,7 +222,7 @@
           </div>
         </a><!-- /newsText -->
       </div>
-      <div class="block mb-5">
+      <div class="block">
         <a href="#" class="newsText d-flex">
           <div class="newsTextTime">23:25 </div>
           <div class="newsTextTitle">
@@ -514,6 +575,14 @@
       </div>
       <div class="col-lg-3">
         <div class="sidebar">
+  <div class="calendar d-block d-lg-none">
+    <h3 class="calendarTitle h3">
+      Архив Новостей
+    </h3>
+    <div class="calendarItem calendarItemSm">
+
+    </div>
+  </div><!-- /calendar -->
   <div class="sidebarBlock sidebarBlock--blue">
     <div class="sidebarBlockHead">
       <h3 class="sidebarBlockHeadText">
@@ -529,13 +598,13 @@
           <a class="newsArticleTitle" href="#">
             Как продвигается оперное искусство в Бурятии
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Общество</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
+            <div class="newsArticleViews textPurple d-block d-sm-none d-xxl-block">
               10 587
             </div>
           </div>
@@ -549,14 +618,14 @@
           <a class="newsArticleTitle" href="#">
             Улан-удэнца арестовали за нацистскую татуировку
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              8 002
+            <div class="newsArticleViews textPurple d-block d-sm-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -569,14 +638,14 @@
           <a class="newsArticleTitle" href="#">
             166 км дорог и 10 мостов отремонтируют в Бурятии в этом году
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-block d-sm-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -589,14 +658,14 @@
           <a class="newsArticleTitle" href="#">
             При пожаре в Бурятии погиб пенсионер
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Происшествия</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-block d-sm-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -610,7 +679,97 @@
     </div>
   </a>
 
-  <div class="sidebarBlock sidebarBlock--blue">
+  <div class="sidebarBlock sidebarBlock--blue d-none d-lg-block">
+    <div class="sidebarBlockHead">
+      <h3 class="sidebarBlockHeadText">
+        Авторские проекты
+      </h3>
+    </div>
+    <div class="sidebarBlockBody sidebarBlockBodyBlue">
+      <div class="newsArticle">
+        <a href="#" class="newsArticleImage">
+          <img src="img/admin/news/image-1.jpeg" alt="image">
+        </a>
+        <div class="newsArticleContent">
+          <a class="newsArticleTitle" href="#">
+            Как продвигается оперное искусство в Бурятии
+          </a>
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
+            <div class="newsArticleFooter d-flex align-items-center gap-2">
+              <a class="fw700 textYellow" href="#">Общество</a>
+              <span class="sep sepPurple"></span>
+              <span class="fw500 textGray">04 янв 2022</span>
+            </div><!-- /newsArticleFooter -->
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
+            </div>
+          </div>
+        </div>
+      </div><!-- /newsArticle -->
+      <div class="newsArticle">
+        <a href="#" class="newsArticleImage">
+          <img src="img/admin/news/image-2.jpeg" alt="image">
+        </a>
+        <div class="newsArticleContent">
+          <a class="newsArticleTitle" href="#">
+            Улан-удэнца арестовали за нацистскую татуировку
+          </a>
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
+            <div class="newsArticleFooter d-flex align-items-center gap-2">
+              <a class="fw700 textYellow" href="#">Экономика</a>
+              <span class="sep sepPurple"></span>
+              <span class="fw500 textGray">04 янв 2022</span>
+            </div><!-- /newsArticleFooter -->
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
+            </div>
+          </div>
+        </div>
+      </div><!-- /newsArticle -->
+      <div class="newsArticle">
+        <a href="#" class="newsArticleImage">
+          <img src="img/admin/news/image-3.jpeg" alt="image">
+        </a>
+        <div class="newsArticleContent">
+          <a class="newsArticleTitle" href="#">
+            166 км дорог и 10 мостов отремонтируют в Бурятии в этом году
+          </a>
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
+            <div class="newsArticleFooter d-flex align-items-center gap-2">
+              <a class="fw700 textYellow" href="#">Экономика</a>
+              <span class="sep sepPurple"></span>
+              <span class="fw500 textGray">04 янв 2022</span>
+            </div><!-- /newsArticleFooter -->
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
+            </div>
+          </div>
+        </div>
+      </div><!-- /newsArticle -->
+      <div class="newsArticle">
+        <a href="#" class="newsArticleImage">
+          <img src="img/admin/news/image-4.jpeg" alt="image">
+        </a>
+        <div class="newsArticleContent">
+          <a class="newsArticleTitle" href="#">
+            При пожаре в Бурятии погиб пенсионер
+          </a>
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
+            <div class="newsArticleFooter d-flex align-items-center gap-2">
+              <a class="fw700 textYellow" href="#">Происшествия</a>
+              <span class="sep sepPurple"></span>
+              <span class="fw500 textGray">04 янв 2022</span>
+            </div><!-- /newsArticleFooter -->
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
+            </div>
+          </div>
+        </div>
+      </div><!-- /newsArticle -->
+    </div>
+  </div>
+
+  <div class="sidebarBlock sidebarBlock--blue d-none d-lg-block">
     <div class="sidebarBlockHead">
       <h3 class="sidebarBlockHeadText">
         Лонгриды
@@ -625,13 +784,13 @@
           <a class="newsArticleTitle" href="#">
             Как продвигается оперное искусство в Бурятии
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Общество</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
               10 587
             </div>
           </div>
@@ -645,14 +804,14 @@
           <a class="newsArticleTitle" href="#">
             Улан-удэнца арестовали за нацистскую татуировку
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              8 002
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -665,14 +824,14 @@
           <a class="newsArticleTitle" href="#">
             166 км дорог и 10 мостов отремонтируют в Бурятии в этом году
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -685,14 +844,14 @@
           <a class="newsArticleTitle" href="#">
             При пожаре в Бурятии погиб пенсионер
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Происшествия</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -700,7 +859,7 @@
     </div>
   </div>
 
-  <div class="sidebarBlock sidebarBlock--blue">
+  <div class="sidebarBlock sidebarBlock--blue d-none d-lg-block">
     <div class="sidebarBlockHead">
       <h3 class="sidebarBlockHeadText">
         Киноразвёртка
@@ -715,13 +874,13 @@
           <a class="newsArticleTitle" href="#">
             Как продвигается оперное искусство в Бурятии
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Общество</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
               10 587
             </div>
           </div>
@@ -735,14 +894,14 @@
           <a class="newsArticleTitle" href="#">
             Улан-удэнца арестовали за нацистскую татуировку
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              8 002
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -755,14 +914,14 @@
           <a class="newsArticleTitle" href="#">
             166 км дорог и 10 мостов отремонтируют в Бурятии в этом году
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -775,14 +934,14 @@
           <a class="newsArticleTitle" href="#">
             При пожаре в Бурятии погиб пенсионер
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Происшествия</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -790,7 +949,7 @@
     </div>
   </div>
 
-  <div class="sidebarBlock sidebarBlock--blue">
+  <div class="sidebarBlock sidebarBlock--blue d-none d-lg-block">
     <div class="sidebarBlockHead">
       <h3 class="sidebarBlockHeadText">
         Блоги
@@ -805,13 +964,13 @@
           <a class="newsArticleTitle" href="#">
             Как продвигается оперное искусство в Бурятии
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Общество</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
               10 587
             </div>
           </div>
@@ -825,14 +984,14 @@
           <a class="newsArticleTitle" href="#">
             Улан-удэнца арестовали за нацистскую татуировку
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              8 002
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -845,14 +1004,14 @@
           <a class="newsArticleTitle" href="#">
             166 км дорог и 10 мостов отремонтируют в Бурятии в этом году
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Экономика</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -865,14 +1024,14 @@
           <a class="newsArticleTitle" href="#">
             При пожаре в Бурятии погиб пенсионер
           </a>
-          <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="d-flex justify-content-between mt-2 mt-xl-3 gap-2 align-items-center">
             <div class="newsArticleFooter d-flex align-items-center gap-2">
               <a class="fw700 textYellow" href="#">Происшествия</a>
               <span class="sep sepPurple"></span>
               <span class="fw500 textGray">04 янв 2022</span>
             </div><!-- /newsArticleFooter -->
-            <div class="newsArticleViews textPurple">
-              7 994
+            <div class="newsArticleViews textPurple d-none d-xxl-block">
+              10 587
             </div>
           </div>
         </div>
@@ -880,14 +1039,150 @@
     </div>
   </div>
 
-  <div class="calendar">
+  <div class="calendar d-none d-lg-block">
     <h3 class="calendarTitle h3">
       Архив Новостей
     </h3>
-    <div class="calendarItem">
+    <div class="calendarItem calendarItemLg">
 
     </div>
   </div><!-- /calendar -->
+
+  <div class="newsCard d-flex d-lg-none">
+    <a href="#" class="newsCardImage">
+      <img src="img/admin/news/image-1.jpeg" alt="image">
+    </a>
+    <div class="newsCardContent">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="d-block">
+          <h3 class="newsCardTitle h3">
+            <a href="#">
+              Число полетов из Бурятии в Москву значительно увеличится
+            </a>
+          </h3>
+          <p class="newsCardDescr">
+            Дополнительные рейсы вводят Smartavia и S7.
+          </p>
+        </div>
+        <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="newsCardFooter d-flex align-items-center gap-2">
+            <a class="fw700 textYellow" href="#">Экономика</a>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow d-none d-xl-block">04 янв 2022</span>
+            <span class="fw500 textYellow d-block d-xl-none">04.01.2024</span>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow">17:33</span>
+          </div><!-- /introBanerHead -->
+          <div class="newsCardViews textPurple">
+            1 247
+          </div>
+        </div>
+      </div>
+    </div><!-- /newsCardContent -->
+  </div><!-- /newsCard -->
+  <div class="newsCard d-flex d-lg-none">
+    <a href="#" class="newsCardImage">
+      <img src="img/admin/news/image-2.jpeg" alt="image">
+    </a>
+    <div class="newsCardContent">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="d-block">
+          <h3 class="newsCardTitle h3">
+            <a href="#">
+              В Роспотребнадзоре Бурятии рассказали, как выбрать качественные продукты к Пасхе
+            </a>
+          </h3>
+          <p class="newsCardDescr">
+            Рекомендации специалистов по закупкам к праздничному столу
+          </p>
+        </div>
+        <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="newsCardFooter d-flex align-items-center gap-2">
+            <a class="fw700 textYellow" href="#">Экономика</a>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow d-none d-xl-block">04 янв 2022</span>
+            <span class="fw500 textYellow d-block d-xl-none">04.01.2024</span>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow">17:33</span>
+          </div><!-- /introBanerHead -->
+          <div class="newsCardViews textPurple">
+            1 247
+          </div>
+        </div>
+      </div>
+    </div><!-- /newsCardContent -->
+  </div><!-- /newsCard -->
+  <a href="#" class="advertisingContent d-flex d-lg-none baner-mobile-560" style="background-image: url('img/admin/advertising/image-home.jpeg');">
+    <div class="advertisingContentTitle">Реклама</div>
+  </a>
+  <div class="newsCard d-flex d-lg-none">
+    <a href="#" class="newsCardImage">
+      <img src="img/admin/news/image-3.jpeg" alt="image">
+    </a>
+    <div class="newsCardContent">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="d-block">
+          <h3 class="newsCardTitle h3">
+            <a href="#">
+              В Бурятии завершились гастроли этно-группы «Намгар» (12+)
+            </a>
+          </h3>
+          <p class="newsCardDescr">
+            Все концерты имели огромный успех сельских жителей.
+          </p>
+        </div>
+        <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="newsCardFooter d-flex align-items-center gap-2">
+            <a class="fw700 textYellow" href="#">Экономика</a>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow d-none d-xl-block">04 янв 2022</span>
+            <span class="fw500 textYellow d-block d-xl-none">04.01.2024</span>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow">17:33</span>
+          </div><!-- /introBanerHead -->
+          <div class="newsCardViews textPurple">
+            1 247
+          </div>
+        </div>
+      </div>
+    </div><!-- /newsCardContent -->
+  </div><!-- /newsCard -->
+  <div class="newsCard d-flex d-lg-none">
+    <a href="#" class="newsCardImage">
+      <img src="img/admin/news/image-4.jpeg" alt="image">
+    </a>
+    <div class="newsCardContent">
+      <div class="d-flex flex-column justify-content-between h-100">
+        <div class="d-block">
+          <h3 class="newsCardTitle h3">
+            <a href="#">
+              Как продвигается оперное искусство в Бурятии
+            </a>
+          </h3>
+          <p class="newsCardDescr">
+            Глава республики дал старт серии открытых уроков в школе №40 г.Улан-Удэ лексей Цыденов. Открытые
+            уроки, которые в последующем будут проводить педагоги и известные люди ...
+          </p>
+        </div>
+        <div class="d-flex justify-content-between mt-3 gap-2 align-items-center">
+          <div class="newsCardFooter d-flex align-items-center gap-2">
+            <a class="fw700 textYellow" href="#">Экономика</a>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow d-none d-xl-block">04 янв 2022</span>
+            <span class="fw500 textYellow d-block d-xl-none">04.01.2024</span>
+            <span class="sep sepPurple"></span>
+            <span class="fw500 textYellow">17:33</span>
+          </div><!-- /introBanerHead -->
+          <div class="newsCardViews textPurple">
+            1 247
+          </div>
+        </div>
+      </div>
+    </div><!-- /newsCardContent -->
+  </div><!-- /newsCard -->
+  <a href="#" class="advertisingContent d-flex d-lg-none baner-mobile-560" style="background-image: url('img/admin/advertising/image-woman.jpeg');">
+    <div class="advertisingContentTitle">Реклама</div>
+  </a>
 
 </div>
       </div>
@@ -904,7 +1199,32 @@
           <a href=/" class="footerLogo logo">
             <img src="img/admin/footer/logo.svg" alt="logo">
           </a>
-          <div class="copyright">© ООО "Издательство Бурмакина"</div>
+          <div class="footerSocials socials d-block d-lg-none">
+            <ul class="socialsList">
+              <li class="socialsItem">
+                <a href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialsItem">
+                <a href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socialsItem">
+                <a href="#" target="_blank">
+                  <svg>
+                    <use xlink:href="img/icons/icons.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div><!-- /socials -->
+          <div class="copyright d-none d-lg-block">© ООО "Издательство Бурмакина"</div>
         </div>
       </div>
       <div class="col-lg-7">
@@ -918,8 +1238,9 @@
               <strong>Телефоны:</strong> <a href="tel:+73012213085">+7 (3012) 21-30-85</a><a href="tel:+73012210504">+7
                 (3012) 21‒05‒04</a>
             </div>
+            <div class="copyright d-block d-lg-none">© ООО "Издательство Бурмакина"</div>
           </div>
-          <div class="footerSocials socials">
+          <div class="footerSocials socials d-none d-lg-block">
             <ul class="socialsList">
               <li class="socialsItem">
                 <a href="#" target="_blank">
@@ -950,19 +1271,7 @@
     </div>
   </div>
 </footer>
-		<!-- modal -->
-<!-- order -->
-<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-target="#modal-order">
-        <img src="img/icons/close-white.svg" alt="icon">
-      </button>
-    </div>
-  </div>
-</div>
+		
 	</div>
 
 	<script src="js/app.min.js"></script>

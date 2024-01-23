@@ -25,14 +25,6 @@ var mySwiperArticle = new Swiper(articleGal, {
     nextEl: document.querySelector('.article .sliderArrowNext'),
     prevEl: document.querySelector('.article .sliderArrowPrev'),
   },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-  },
 });
 
 let searchInput = document.querySelector('.searchInputSect');
@@ -42,4 +34,50 @@ searchInputDelete?.addEventListener('click', () => {
   searchInput.focus();
 });
 
-new AirDatepicker('.calendarItem');
+new AirDatepicker('.calendarItemLg');
+new AirDatepicker('.calendarItemSm');
+
+// Burger
+const btnMenu = document.querySelector('#toggle');
+const menu = document.querySelector('.headerNavMobile');
+
+const bodyEl = document.querySelector('body');
+const menuLine1 = document.querySelector('.top-bun');
+const menuLine2 = document.querySelector('.meat');
+const menuLine3 = document.querySelector('.bottom-bun');
+
+
+const toggleMenu = function () {
+  menu.classList.toggle('active');
+}
+const toggleBurger = function () {
+  btnMenu.classList.toggle('active');
+}
+const toggleMenuLine = function () {
+  menuLine1.classList.toggle('active');
+  menuLine2.classList.toggle('active');
+  menuLine3.classList.toggle('active');
+}
+const bodyOverflow = function () {
+  bodyEl.classList.toggle('hidden');
+}
+
+btnMenu?.addEventListener('click', function (e) {
+  e.stopPropagation();
+  toggleMenu();
+  toggleBurger();
+  bodyOverflow();
+  toggleMenuLine();
+});
+
+let headerSearchButtonCall = document.querySelector('.headerSearchButton');
+let headerSearchMobile = document.querySelector('.headerSearchMobile');
+let headerSearchBack = document.querySelector('.headerSearchBack'); 
+
+headerSearchButtonCall.addEventListener('click', () => {
+  console.log('12');
+  headerSearchMobile.classList.add('active');
+});
+headerSearchBack.addEventListener('click', () => {
+  headerSearchMobile.classList.remove('active');
+});

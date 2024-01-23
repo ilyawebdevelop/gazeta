@@ -3,13 +3,49 @@
   padding-top: 45px;
   padding-bottom: 20px;
 
+  @media(max-width: 1400px) {
+    padding-top: 20px;
+    padding-bottom: 16px;
+  }
+
+  @media(max-width: 991px) {
+    background-color: #0039A6;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
   &Logo {
     img {
       max-width: 407px;
+
+      @media(max-width: 1400px) {
+        max-width: 270px;
+      }
+
+      @media(max-width: 1199px) {
+        max-width: 220px;
+      }
     }
   }
 
+  &Age {
+    font-size: 20px;
+    font-family: $font-family-inter;
+    line-height: 22px;
+    font-weight: 500;
+    color: #FFC700;
+  }
+
   &T {
+    @media(max-width: 991px) {
+      display: none;
+    }
+
     &L {
       -webkit-box-flex: 1;
       -ms-flex: 1 0 0px;
@@ -41,11 +77,55 @@
 
   &B {
     margin-top: 32px;
+
+    @media(max-width: 1400px) {
+      margin-top: 15px;
+    }
+
+    @media(max-width: 991px) {
+      margin-top: 0;
+    }
+
+    &Mob {
+
+      &Left,
+      &Right {
+        display: none;
+        align-items: center;
+
+        @media(max-width: 991px) {
+          display: flex;
+        }
+      }
+
+      &Left {
+        column-gap: 16px;
+      }
+
+      &Right {
+        column-gap: 30px;
+      }
+    }
+
+    .container {
+      @media(max-width: 991px) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 
   &Nav {
     padding-bottom: 13px;
     border-bottom: 1px solid #1F1F1F;
+
+    @media(max-width: 1400px) {
+      padding-bottom: 7px;
+    }
+
+    @media(max-width: 991px) {
+      display: none;
+    }
 
     &T {
       margin-bottom: 19px;
@@ -57,11 +137,34 @@
       column-gap: 18px;
       justify-content: center;
 
+      @media(max-width: 1400px) {
+        column-gap: 14px;
+      }
+
+      @media(max-width: 1199px) {
+        column-gap: 8px;
+      }
+
+      @media(max-width: 991px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+      }
+
       li {
         a {
           font-weight: 700;
           font-size: 16px;
           transition: color .2s linear;
+
+          @media(max-width: 1400px) {
+            font-size: 14px;
+          }
+
+          @media(max-width: 1199px) {
+            font-size: 12px;
+          }
+
           &:hover {
             color: #0039A6;
           }
@@ -80,6 +183,10 @@
       width: 305px;
       color: #5D5FEF;
 
+      @media(max-width: 1199px) {
+        font-size: 14px;
+      }
+
       &::placeholder {
         color: #5D5FEF;
       }
@@ -87,8 +194,16 @@
   }
 
   .socials {
+    @media(max-width: 991px) {
+      margin-top: 24px;
+    }
+
     ul {
       column-gap: 13px;
+
+      @media(max-width: 991px) {
+        justify-content: center;
+      }
 
       li {
         a {
@@ -108,6 +223,10 @@
     margin-bottom: 12px;
     display: flex;
     align-items: center;
+
+    @media(max-width: 1400px) {
+      margin-bottom: 5px;
+    }
 
     &Date {
       display: flex;
@@ -158,28 +277,104 @@
       color: #FFC700;
     }
   }
+
   &--blue {
     .headerInfo {
       color: #0039A6;
     }
+
     .headerInfoAge {
       color: #D7A700;
     }
+
     .headerInfoWeatherIcon svg {
       fill: #0039A6;
     }
+
     .socials ul li a svg {
       fill: #0039A6;
     }
+
     .headerInfoWeatherSelect {
       background: url('@img/icons/arrow-down-blue.svg') no-repeat right 2px top 4px/10px;
     }
+
     .searchW .searchInput {
       color: #fff;
       background: #0039A6 url('@img/icons/search-white.svg') no-repeat right 12px center;
+
       &::placeholder {
         color: #fff;
       }
     }
+  }
+}
+
+.headerNavMobile {
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  top: 59px;
+  height: calc(100vh - 59px);
+  width: 100%;
+  overflow-y: scroll;
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.5s;
+    animation: shows 0.5s;
+  }
+}
+
+.headerSearchMobile {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 59px;
+  background: #0039A6;
+  .container {
+    height: 100%;
+  }
+  .searchW {
+    height: 100%;
+    position: relative;
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+  }
+  .searchW .searchInput {
+    width: auto;
+    height: fit-content;
+    background: #0039A6;
+    color: #fff;
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: .8);
+    border-radius: 0;
+    width: calc(100% - 80px);
+    &::placeholder {
+      color: rgba($color: #fff, $alpha: .8);
+    }
+  }
+
+  &.active {
+    display: block;
+    -webkit-animation: shows 0.5s;
+    animation: shows 0.5s;
+  }
+}
+.headerSearchMobileSubmit {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.headerSearchBack {
+  img {
+    min-width: 32px;
+    width: 32px;
+    height: 32px;
   }
 }
