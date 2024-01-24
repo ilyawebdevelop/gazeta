@@ -12,6 +12,9 @@
   // transition: background 0.2s linear;  
   display: none;
 
+  &.active {
+    background: url('@img/icons/menu-close.svg') no-repeat center center / 30px;
+  }
   @media (max-width: 991px) {
     display: flex;
   }
@@ -32,6 +35,6 @@
 .top-bun.active,
 .meat.active,
 .bottom-bun.active {
-  // opacity: 0;
+  opacity: 0;
 }
 
