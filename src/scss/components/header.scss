@@ -182,9 +182,13 @@
       background: rgba(183, 183, 183, 0.35) url('@img/icons/search-purple.svg') no-repeat right 12px center;
       width: 305px;
       color: #5D5FEF;
+      
 
       @media(max-width: 1199px) {
         font-size: 14px;
+      }
+      @media(max-width: 991px){
+        border-radius: 0;
       }
 
       &::placeholder {

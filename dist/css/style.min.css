@@ -17088,6 +17088,11 @@ h2 {
     font-size: 14px;
   }
 }
+@media (max-width: 991px) {
+  .header .searchW .searchInput {
+    border-radius: 0;
+  }
+}
 .header .searchW .searchInput::placeholder {
   color: #5D5FEF;
 }
