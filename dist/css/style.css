@@ -16294,6 +16294,11 @@ h2 {
   display: flex;
   column-gap: 15px;
 }
+@media (max-width: 1400px) {
+  .newsArticle {
+    column-gap: 11px;
+  }
+}
 .newsArticle:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -16311,6 +16316,11 @@ h2 {
 }
 .newsArticleContent {
   padding-top: 4px;
+}
+@media (max-width: 991px) {
+  .newsArticleContent {
+    width: 100%;
+  }
 }
 .newsArticleTitle {
   font-size: 14px;
@@ -16372,37 +16382,26 @@ h2 {
   height: fit-content;
   color: #B7B7B7;
 }
+@media (max-width: 1400px) {
+  .newsArticleViews {
+    font-size: 9px;
+  }
+}
 
 .advertisingContent {
-  padding-top: 28px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 20px;
-  min-height: 220px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
   transition: opacity 0.2s linear;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-@media (max-width: 1199px) {
-  .advertisingContent {
-    min-height: 155px;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-  }
+  position: relative;
 }
 @media (max-width: 991px) {
   .advertisingContent {
     margin-bottom: 20px;
     margin-top: 20px;
   }
-}
-.advertisingContent--sm {
-  min-height: 200px;
 }
 .advertisingContent:hover {
   opacity: 0.9;
@@ -16413,13 +16412,20 @@ h2 {
   font-weight: 400;
   color: #fff;
   height: fit-content;
+  position: absolute;
+  width: calc(100% - 52px);
+  top: 28px;
+  left: 26px;
 }
 .advertisingContentTitle--black {
   color: #000;
 }
+.advertisingContentImg {
+  width: 100%;
+  border-radius: 10px;
+}
 
 .sidebarBaner {
-  min-height: 420px;
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -16429,21 +16435,7 @@ h2 {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
-}
-@media (max-width: 1400px) {
-  .sidebarBaner {
-    min-height: 350px;
-  }
-}
-@media (max-width: 1199px) {
-  .sidebarBaner {
-    min-height: 300px;
-  }
-}
-@media (max-width: 991px) {
-  .sidebarBaner {
-    min-height: 420px;
-  }
+  position: relative;
 }
 .sidebarBaner:hover {
   opacity: 0.9;
@@ -16454,6 +16446,12 @@ h2 {
   font-weight: 400;
   color: #000;
   height: fit-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  width: calc(100% - 20px);
 }
 @media (max-width: 1400px) {
   .sidebarBanerText {
@@ -16464,6 +16462,14 @@ h2 {
   .sidebarBanerText {
     font-size: 16px;
   }
+}
+@media (max-width: 767px) {
+  .sidebarBanerText {
+    font-size: 24px;
+  }
+}
+.sidebarBanerImg {
+  border-radius: 10px;
 }
 
 .calendarTitle {
@@ -16482,6 +16488,7 @@ h2 {
 @media (max-width: 991px) {
   .calendarTitle {
     font-size: 18px;
+    text-align: center;
   }
 }
 
@@ -16844,20 +16851,6 @@ h2 {
   border-bottom: 1px solid #1F1F1F;
 }
 
-@media (max-width: 991px) {
-  .baner-mobile-120 {
-    min-height: 120px;
-    padding-top: 28px;
-    padding-left: 27px;
-    margin-top: 22px;
-    margin-bottom: 22px;
-  }
-  .baner-mobile-560 {
-    min-height: 560px;
-    padding-top: 28px;
-    padding-left: 27px;
-  }
-}
 .button {
   display: flex;
   align-items: center;
@@ -17323,6 +17316,9 @@ h2 {
     padding-top: 100px;
   }
 }
+.introBanerSm:hover .introBanerTitleSm {
+  color: #FFC700;
+}
 .introBanerSm::before {
   content: "";
   position: absolute;
@@ -17382,6 +17378,7 @@ h2 {
   line-height: normal;
   max-width: 258px;
   position: relative;
+  transition: color 0.2s linear;
 }
 .introBanerDescr {
   font-weight: 700;
@@ -17577,7 +17574,9 @@ h2 {
 }
 @media (max-width: 991px) {
   .calendarItem .air-datepicker {
-    max-width: 400px;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .calendarItem .air-datepicker-nav {

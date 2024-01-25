@@ -77,7 +77,8 @@ table {
   position: relative;
   overflow: hidden;
   background-color: #FAFAFA;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-top: 60px;
   }
 }
@@ -117,15 +118,18 @@ h6 {
   line-height: 45px;
   letter-spacing: 0.72px;
   font-weight: 700;
-  @media(max-width: 1400px){
+
+  @media(max-width: 1400px) {
     font-size: 32px;
     line-height: 40px;
   }
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     font-size: 26px;
     line-height: 34px;
   }
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 0.48px;
@@ -154,7 +158,8 @@ h2 {
     font-size: 10px;
     letter-spacing: 0.2px;
   }
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     font-size: 18px;
   }
 }
@@ -450,7 +455,8 @@ h2 {
     @media(max-width: 991px) {
       max-height: 180px;
     }
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       max-height: unset;
       height: 180px;
       width: 100%;
@@ -485,7 +491,8 @@ h2 {
     @media(max-width: 1199px) {
       margin-bottom: 12px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       font-size: 18px;
     }
 
@@ -525,7 +532,8 @@ h2 {
     @media(max-width: 1199px) {
       font-size: 8px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       font-size: 11px;
     }
   }
@@ -549,7 +557,8 @@ h2 {
     @media(max-width: 1199px) {
       font-size: 8px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       font-size: 10px;
     }
   }
@@ -558,6 +567,10 @@ h2 {
 .newsArticle {
   display: flex;
   column-gap: 15px;
+
+  @media(max-width: 1400px) {
+    column-gap: 11px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 30px;
@@ -582,6 +595,10 @@ h2 {
 
   &Content {
     padding-top: 4px;
+
+    @media(max-width: 991px) {
+      width: 100%;
+    }
   }
 
   &Title {
@@ -599,7 +616,8 @@ h2 {
     @media(max-width: 1199px) {
       font-size: 8px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       font-size: 14px;
     }
 
@@ -619,7 +637,8 @@ h2 {
     @media(max-width: 1199px) {
       font-size: 8px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       font-size: 10px;
     }
 
@@ -639,36 +658,28 @@ h2 {
     font-weight: 500;
     height: fit-content;
     color: #B7B7B7;
+
+    @media(max-width: 1400px) {
+      font-size: 9px;
+    }
   }
 
 }
 
 .advertisingContent {
-  padding-top: 28px;
-  padding-left: 14px;
-  padding-right: 14px;
-  padding-bottom: 20px;
-  min-height: 220px;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 10px;
   transition: opacity .2s linear;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
 
-  @media(max-width: 1199px) {
-    min-height: 155px;
-    padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 10px;
-  }
-  @media(max-width: 991px){
+  @media(max-width: 1199px) {}
+
+  @media(max-width: 991px) {
     margin-bottom: 20px;
     margin-top: 20px;
-  }
-  &--sm {
-    min-height: 200px;
   }
 
   &:hover {
@@ -681,15 +692,24 @@ h2 {
     font-weight: 400;
     color: #fff;
     height: fit-content;
+    position: absolute;
+    width: calc(100% - 52px);
+    top: 28px;
+    left: 26px;
 
     &--black {
       color: #000;
     }
   }
+
+  &Img {
+    width: 100%;
+    border-radius: 10px;
+  }
 }
 
 .sidebarBaner {
-  min-height: 420px;
+  // min-height: 420px;
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -699,17 +719,18 @@ h2 {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
+  position: relative;
 
   @media(max-width: 1400px) {
-    min-height: 350px;
+    // min-height: 350px;
   }
 
   @media(max-width: 1199px) {
-    min-height: 300px;
+    // min-height: 300px;
   }
 
   @media(max-width: 991px) {
-    min-height: 420px;
+    // min-height: 420px;
   }
 
   &:hover {
@@ -722,6 +743,12 @@ h2 {
     font-weight: 400;
     color: #000;
     height: fit-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    width: calc(100% - 20px);
 
     @media(max-width: 1400px) {
       font-size: 18px;
@@ -730,6 +757,14 @@ h2 {
     @media(max-width: 1199px) {
       font-size: 16px;
     }
+
+    @media(max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+
+  &Img {
+    border-radius: 10px;
   }
 }
 
@@ -745,8 +780,10 @@ h2 {
       letter-spacing: 0.36px;
       margin-bottom: 12px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       font-size: 18px;
+      text-align: center;
     }
   }
 }
@@ -755,7 +792,7 @@ h2 {
   &Crumbs {
     a {
       font-size: 11px;
-      line-height: 18px;  
+      line-height: 18px;
     }
 
     .sep {
@@ -794,11 +831,13 @@ h2 {
     line-height: 32px;
     color: #1F1F1F;
     margin-bottom: 30px;
-    @media(max-width: 1199px){
+
+    @media(max-width: 1199px) {
       font-size: 16px;
       line-height: 25px;
     }
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       font-size: 18px;
     }
   }
@@ -806,7 +845,8 @@ h2 {
   &Figure {
     margin-bottom: 30px;
     margin-top: 30px;
-    @media(max-width: 1400px){
+
+    @media(max-width: 1400px) {
       margin-top: 20px;
       margin-bottom: 20px;
     }
@@ -824,15 +864,17 @@ h2 {
       font-size: 13px;
       line-height: 25px;
       font-weight: 400;
-      @media(max-width: 991px){
-       font-size: 11px; 
+
+      @media(max-width: 991px) {
+        font-size: 11px;
       }
     }
   }
 
   p {
     margin-bottom: 15px;
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       font-size: 15px;
     }
   }
@@ -854,7 +896,8 @@ h2 {
     padding: 9px 0 9px 9px;
     background: #F2F2F2;
     border-radius: 10px;
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       margin-left: -20px;
       margin-right: -20px;
       padding-left: 20px;
@@ -864,16 +907,20 @@ h2 {
 
   &Gal {
     padding-right: 170px;
-    @media(max-width: 1199px){
+
+    @media(max-width: 1199px) {
       padding-right: 90px;
     }
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       padding-right: 180px;
     }
-    @media(max-width: 767px){
+
+    @media(max-width: 767px) {
       padding-right: 80px;
     }
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       overflow: visible;
     }
 
@@ -883,10 +930,12 @@ h2 {
         object-fit: cover;
         border-radius: 10px;
         transition: opacity .2s linear;
-        @media(max-width: 1400px){
+
+        @media(max-width: 1400px) {
           height: 150px;
         }
-        @media(max-width: 470px){
+
+        @media(max-width: 470px) {
           height: 100px;
         }
 
@@ -970,21 +1019,26 @@ h2 {
     column-gap: 12px;
   }
 }
+
 .vjs-poster img {
   object-fit: cover;
 }
+
 .video-js {
   width: 100%;
   height: 365px;
   border-radius: 10px;
   overflow: hidden;
-  @media(max-width: 1400px){
+
+  @media(max-width: 1400px) {
     height: 320px;
   }
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     height: 280px;
   }
-  @media(max-width: 575px){
+
+  @media(max-width: 575px) {
     height: 190px;
   }
 
@@ -1020,7 +1074,8 @@ h2 {
 
 .news {
   padding-bottom: 40px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     padding-top: 20px;
     padding-bottom: 0;
   }
@@ -1032,11 +1087,13 @@ h2 {
   color: #0039A6;
   font-weight: 700;
   margin-bottom: 30px;
-  @media(max-width: 1199px){
+
+  @media(max-width: 1199px) {
     font-size: 42px;
     margin-bottom: 20px;
   }
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     font-size: 24px;
     margin-bottom: 0px;
   }
@@ -1051,8 +1108,9 @@ h2 {
 
 .sect {
   padding-bottom: 40px;
-  @media(max-width: 991px){
-    padding-bottom: 10px;    
+
+  @media(max-width: 991px) {
+    padding-bottom: 10px;
   }
 }
 
@@ -1061,20 +1119,23 @@ h2 {
 
   .h1 {
     margin-bottom: 30px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       margin-bottom: 12px;
     }
   }
 }
 
 .content {
-  @media(max-width: 991px){
+  @media(max-width: 991px) {
     padding-top: 24px;
   }
+
   p {
     margin-bottom: 20px;
     margin-top: 20px;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       margin-top: 15px;
       margin-bottom: 15px;
     }
@@ -1096,7 +1157,8 @@ h2 {
 .text--lg {
   font-size: 20px;
   line-height: 32px;
-  @media(max-width: 991px){
+
+  @media(max-width: 991px) {
     font-size: 18px;
     line-height: 30px;
   }
@@ -1108,19 +1170,4 @@ h2 {
 
 .border-bottom-black {
   border-bottom: 1px solid #1F1F1F;
-}
-
-@media(max-width: 991px) {
-  .baner-mobile-120 {
-    min-height: 120px;
-    padding-top: 28px;
-    padding-left: 27px;
-    margin-top: 22px;
-    margin-bottom: 22px;
-  }
-  .baner-mobile-560 {
-    min-height: 560px;
-    padding-top: 28px;
-    padding-left: 27px;
-  }
 }
